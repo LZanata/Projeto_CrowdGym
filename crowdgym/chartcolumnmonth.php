@@ -6,19 +6,10 @@ include 'functions.php';
 <?php
  
 $dataPoints = array( 
-	array("y" => 990, "label" => "janeiro" ),
-	array("y" => 700, "label" => "fevereiro" ),
-	array("y" => 500, "label" => "março" ),
-	array("y" => 400, "label" => "abril" ),
-	array("y" => 450, "label" => "maio" ),
-	array("y" => 470, "label" => "junho" ),
-  array("y" => 460, "label" => "julho" ),
-	array("y" => 490, "label" => "agosto" ),
-	array("y" => 550, "label" => "setembro" ),
-  array("y" => 600, "label" => "outubro" ),
-	array("y" => 800, "label" => "novembro" ),
-	array("y" => 950, "label" => "dezembro" ),
-
+	array("y" => 99, "label" => "1°semana" ),
+	array("y" => 70, "label" => "2°semana" ),
+	array("y" => 100, "label" => "3°semana" ),
+	array("y" => 120, "label" => "4°semana" ),
 );
  
 ?>
@@ -32,7 +23,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	theme: "light2",
 	title:{
-		text: "Fluxo Anual da Academia"
+		text: "Fluxo Mensal da Academia"
 	},
 	axisY: {
 		title: "Quantidade de Alunos"
@@ -52,8 +43,7 @@ chart.render();
 <div id="chartContainer" style="height: 370px; width: 100%;"></div>
 <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
 </body>
-<a class = 'link' href="./chartcolumnmonth.php">Fluxo Mensal</a> 
+<a class = 'link' href="./chartcolumn.php">Fluxo Anual</a>
 <a class = 'link' href="./chartpizza.php">Faixa Etária</a> 
 </html>
 <?=template_footer()?>
- 

@@ -24,7 +24,7 @@ if (isset($_GET['id'])) {
     exit('ID não especificada!');
 }
 ?>
-<?=template_header('Delete')?>
+<?=template_header('CrowdGym')?>
 
 <div class="content delete">
 	<h2>Deletar Aluno #<?=$contact['id']?></h2>

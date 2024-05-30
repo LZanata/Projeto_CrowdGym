@@ -24,7 +24,7 @@ if (isset($_GET['id'])) {
     exit('No ID specified!');
 }
 ?>
-<?= template_header('Read') ?>
+<?= template_header('CrowdGym') ?>
 
 <div class="content update">
     <h2>Update Contact #<?= $contact['id'] ?></h2>

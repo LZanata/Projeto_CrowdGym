@@ -14,7 +14,7 @@ if (!empty($_POST)) {
     $msg = 'Aluno Cadastrado!';
 }
 ?>
-<?=template_header('Create')?>
+<?=template_header('CrowdGym')?>
 
 <div class="content update">
 	<h2>Cadastro do Aluno</h2>

@@ -10,7 +10,7 @@ $stmt->execute();
 $contacts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $num_contacts = $pdo->query('SELECT COUNT(*) FROM contacts')->fetchColumn();
 ?>
-<?= template_header('Read') ?>
+<?= template_header('CrowdGym') ?>
 
 <div class="content read">
     <h2>

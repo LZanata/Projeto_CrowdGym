@@ -45,9 +45,9 @@ chart.render();
 </head>
 <body>
 <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
-<br><a href="./index.php">Fluxo Semanal</a> 
-<a href="./chartcolumn.php">Fluxo Anual</a> 
+<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script> 
 </body>
 </html> 
+<a class = 'link' href="./chartcolumnmonth.php">Fluxo Mensal</a> 
+<a class = 'link' href="./chartcolumn.php">Fluxo Anual</a>
 <?=template_footer()?>
