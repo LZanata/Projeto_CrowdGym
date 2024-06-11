@@ -3,7 +3,7 @@ class Contador {
     private $aluno;
     
     public function quantidadeAluno() {
-        echo '<div class="content"><h2>Alunos Presentes <br><b>'. $this->getAluno().'</b><br><a href="./details.php">Ver Detalhes</a></h2></div>';      
+        echo '<div class="content"><h2>Quantidade de Alunos</h2><b>'. $this->getAluno().'</b></div>';      
     }
     
     public function contarEntrada() {

@@ -1,5 +1,4 @@
 <?php
-include 'functions.php';
 $pdo = pdo_connect_mysql();
 $page = isset($_GET['page']) && is_numeric($_GET['page']) ? (int) $_GET['page'] : 1;
 $records_per_page = 5;
@@ -10,10 +9,10 @@ $stmt->execute();
 $contacts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $num_contacts = $pdo->query('SELECT COUNT(*) FROM contacts')->fetchColumn();
 ?>
-<?=template_header('CrowdGym')?>
 <div class="content read">
 <table>
         <thead>
+        <div class="content"><h2>Detalhes dos Alunos</h2></div>
             <tr>
                 <td>ID</td>
                 <td>Nome</td>
@@ -42,4 +41,3 @@ $num_contacts = $pdo->query('SELECT COUNT(*) FROM contacts')->fetchColumn();
         </tbody>
 </table>
 </div>
-<?=template_footer()?>

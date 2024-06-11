@@ -26,7 +26,7 @@ if (isset($_GET['id'])) {
 ?>
 <?=template_header('CrowdGym')?>
 
-<div class="content delete">
+<div class="content-delete">
 	<h2>Deletar Aluno #<?=$contact['id']?></h2>
     <?php if ($msg): ?>
     <p><?=$msg?></p>

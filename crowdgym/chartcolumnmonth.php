@@ -13,9 +13,6 @@ $dataPoints = array(
 );
  
 ?>
-<!DOCTYPE HTML>
-<html>
-<head>
 <script>
 window.onload = function() {
  
@@ -38,12 +35,6 @@ chart.render();
  
 }
 </script>
-</head>
-<body>
-<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<div id="chartContainer"></div>
 <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
-</body>
-<a class = 'link' href="./chartcolumn.php">Fluxo Anual</a>
-<a class = 'link' href="./chartpizza.php">Faixa Etária</a> 
-</html>
 <?=template_footer()?>

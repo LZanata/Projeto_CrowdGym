@@ -9,9 +9,10 @@ if (!empty($_POST)) {
     $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
     $cpf = isset($_POST['cpf']) ? $_POST['cpf'] : '';
     $idade = isset($_POST['idade']) ? $_POST['idade'] : date('d-m-Y');
-    $stmt = $pdo->prepare('INSERT INTO contacts VALUES (?, ?, ?, ?, ?, ?)');
-    $stmt->execute([$id, $name, $email, $phone, $cpf, $idade]);
-    $msg = 'Aluno Cadastrado!';
+    $status = isset($_POST['status']) ? $_POST['status'] : '';
+    $stmt = $pdo->prepare('INSERT INTO contacts VALUES (?, ?, ?, ?, ?, ?, ?)');
+    $stmt->execute([$id, $name, $email, $phone, $cpf, $idade, $status]);
+    $msg = "<div class='content update'><br>Aluno Cadastrado!</div>";
 }
 ?>
 <?=template_header('CrowdGym')?>
@@ -32,10 +33,11 @@ if (!empty($_POST)) {
         <input type="text" name="cpf" placeholder="00011100011" id="cpf">
         <input type="date" name="idade" value="<?=date('d-m-Y')?>" id="idade">
         <input type="submit" value="Cadastrar">
+  
     </form>
-    <?php if ($msg): ?>
-    <p><?=$msg?></p>
-    <?php endif; ?>
+    <?php if ($msg): 
+    echo ($msg);
+    endif; ?>
 </div>
 
 <?=template_footer()?>

@@ -15,7 +15,9 @@ include 'functions.php';
         $c->contarSaida();
         $c->quantidadeAluno();     
 ?>
+
 <?php
-        include './chartcolumnweek.php';
+        include './details.php';
 ?>
+
 <?=template_footer()?>

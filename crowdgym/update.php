@@ -12,7 +12,7 @@ if (isset($_GET['id'])) {
         $idade = isset($_POST['idade']) ? $_POST['idade'] : date('d-m-Y');
         $stmt = $pdo->prepare('UPDATE contacts SET id = ?, name = ?, email = ?, phone = ?, cpf = ?, idade = ? WHERE id = ?');
         $stmt->execute([$id, $name, $email, $phone, $cpf, $idade, $_GET['id']]);
-        $msg = 'Updated Successfully!';
+        $msg = 'Cadastro Atualizado!';
     }
     $stmt = $pdo->prepare('SELECT * FROM contacts WHERE id = ?');
     $stmt->execute([$_GET['id']]);
@@ -27,7 +27,7 @@ if (isset($_GET['id'])) {
 <?= template_header('CrowdGym') ?>
 
 <div class="content update">
-    <h2>Update Contact #<?= $contact['id'] ?></h2>
+    <h2>Atualizar Aluno #<?= $contact['id'] ?></h2>
     <form action="update.php?id=<?= $contact['id'] ?>" method="post">
         <label for="id">ID</label>
         <label for="name">Nome</label>
