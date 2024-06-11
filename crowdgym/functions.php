@@ -32,7 +32,7 @@ function template_header($title)
 	<div class="dropdown-menu">		
     <a class='link' href="./chartcolumnweek.php">Fluxo Semanal</a>
 	<a class='link' href="./chartcolumnmonth.php">Fluxo Mensal</a>
-	<a class='link' href="./chartcolumn.php">Fluxo Anual</a>
+	<a class='link' href="./chartcolumnyear.php">Fluxo Anual</a>
 	<a class='link' href="./chartpizza.php">Faixa Etária</a>
     </div>
 	</li>     	
