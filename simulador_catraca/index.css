@@ -1,0 +1,109 @@
+/*Padronizando os componentes*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /*Configuração do main*/
+  main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Configuração da div que possui todas as outras divs do forms*/
+.container{
+    margin-top: 2%;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    width: 40%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*Configurando a div do titulo*/
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1{
+  padding: 3rem 1rem 3rem 1rem;  
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group{
+    padding-bottom: 1rem;
+}
+
+.input-group input{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Separando cada tela de input*/
+.input-box{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem; 
+ }
+ 
+ /*Customização do input*/
+ .input-box input{
+   height: 3rem;
+   margin: 0.6rem 0;
+   padding: 0.8rem 1.2rem;
+   border: none;
+   border-radius: 10px;
+   box-shadow: 1px 1px 6px #0000001c;
+ }
+ 
+ /*Customização do input ao passar o mouse nele*/
+ .input-box input:hover{
+   background-color: #eeeeee75;
+ }
+ 
+ /*Curstomização do input ao clicar nele*/
+ .input-box input:focus-visible{
+   outline: 1px solid #F57419;
+ }
+
+.mensagem {
+    transition: opacity 1s ease-in-out;
+}
+
+.mensagem.oculta {
+    opacity: 0;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Customização do botão*/
+.button button{ 
+    width: 100%;
+    height: 3rem;
+    border: none;
+    background-color: #F57419;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.93rem;
+    color: #fff;
+    margin-bottom: 10px;
+  }

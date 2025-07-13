@@ -1,0 +1,207 @@
+/*Padronizando os componentes*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+   main{
+    /*faz os conteudos ficarem centralizados no meio da tela*/
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+   }
+   
+    .crowd {
+        /*faz o titulo ficar mais abaixo na tela*/
+        margin-top: 2rem;
+    }
+
+    .crowd h1{
+        /*muda o tamanho e estilo do titulo*/
+        font-size: 120px;
+        font-family: monospace;
+    }
+    
+    .admin{
+        display: flex;
+        text-align: center;
+        justify-content: right;
+        margin: 2rem 2rem 0 0rem;
+    }
+
+    .admin a{
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    
+    .botoes {
+        /*essa div centraliza os botoes de entrar no meio da tela*/
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 9rem;
+        margin-bottom: 7.5rem;
+    }
+
+    .botoes a {
+        /*estiliza os botoes de entrar como aluno/academia*/
+        display: block;
+        width: 400px;
+        height: 80px;
+        line-height: 75px;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #333;
+        border: 2px solid #333;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;    
+    }
+
+    .bentrar1{
+        /*coloca um espaco entre os botoes*/
+       margin-right: 70px;
+    }
+
+
+    .botoes a span {
+        /*faz o texto dos botoes ficarem no centro e o z-index faz ele ficar em cima da cor do fundo quando acontecer a transicao*/
+        position: relative;
+        z-index: 2;
+        margin-top: 50px;
+        size: 2rem;
+    }
+
+    .bentrar1 a:after {
+        /*muda a cor do botao quando passa o mouse em cima e coloca uma transicao para preencher o botao em um tempo delimitado*/
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #f57419;
+        transition: all .60s;
+    }
+    
+    .bentrar2 a:after {
+        /*muda a cor do botao quando passa o mouse em cima e coloca uma transicao para preencher o botao em um tempo delimitado*/
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background: #f57419;
+        transition: all .60s;
+    }
+
+    .botoes a:hover {
+        /*deixa o texto no botao branco depois da transicao */
+        color: #fff;
+    }
+
+    .botoes a:hover:after {
+        /*faz a transicao ocupar todo o espaco do botao*/
+        width: 100%;
+    }
+
+/*formata o texto do e o centraliza copyright*/
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+    @media screen and (max-width: 640px) {
+        h1{
+            font-size: 100px;
+        }
+
+        .entrar{
+            width: 80%;
+            display: flex;
+            align-items: center;
+        }
+        
+        a{
+            height: 90px;
+            line-height: 30px;
+            width: 250px;
+        }
+        
+    }
+
+    @media screen and (min-width: 641px) {
+        h1{
+            font-size: 120px;
+        }
+        .entrar{
+            display: flex;
+            align-content: center;
+            width: 90%;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        .entrar{
+            width: 50%
+        }
+        
+    }
+    @media screen and (max-width: 510px) {
+        h1{
+            font-size: 80px;
+        }
+        
+    }
+    @media screen and (max-width: 412px) {
+        h1{
+            font-size: 60px;
+        }
+        
+    }
+
+    @media screen and (max-width: 850px) {
+            .botoes {
+                /*essa div centraliza os botoes de entrar no meio da tela*/
+                display: block;
+                margin-top: 9rem;
+                margin-bottom: 7.5rem;
+            }
+            .bentrar1{
+                margin-right: auto;
+                margin-bottom: 20px;
+            }
+        
+            .botoes a {
+                /*estiliza os botoes de entrar como aluno/academia*/
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 300px;
+                height: 80px;
+                line-height: 75px;
+                font-size: 18px;
+                font-family: sans-serif;
+                text-decoration: none;
+                color: #333;
+                border: 2px solid #333;
+                letter-spacing: 2px;
+                text-align: center;
+                position: relative;
+                transition: all .35s;    
+            }
+        }
